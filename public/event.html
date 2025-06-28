@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TAKWAH</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+              .navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+ p {
+    text-align: justify;
+    text-align-last: right;
+    direction: rtl;
+  }
+
+  .event-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+.page-header {
+    padding: 250px 0 !important;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(img/header-event2.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover;           /* Ensure it fills the container */
+    background-position: center;      /* Center the image */
+}
+
+
+
+
+  .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: transparent !important;
+    padding: 15px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar-collapse {
+    background: transparent !important;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .navbar a.nav-link {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    color: #eed7ae;
+  }
+
+    .navbar .navbar-brand {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel,
+.owl-carousel {
+  width: 100vw;
+  height: 75vh !important;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0px !important;
+  margin-bottom: 85px !important;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%; /* force it to stay within 75vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain if you don’t want crop */
+  display: block;
+}
+
+.carousel-text {
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  max-width: 90%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hhdiv {
+  padding-top: 30px;
+  margin: 0;
+}
+
+@media (max-width: 1500.98px) {
+        .carousel {
+  height: 50vh !important;
+    }
+
+}
+@media (max-width: 1100.98px) {
+        .carousel {
+  height: 35vh !important;
+    }
+
+}
+@media (max-width: 767.98px) {
+    .carousel {
+  height: 25vh !important;
+    }
+
+}
+@media (max-width: 570.98px) {
+    .carousel {
+  height: 20vh !important;
+  margin-bottom: 0px !important;
+    }
+
+}@media (max-width: 450.98px) {
+    .carousel {
+  height: 13vh !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.footer {
+  background: #1a1a1a;
+  padding: 3rem 1rem;
+  color: #eed7ae;
+}
+
+.footer-social .btn {
+  background-color: transparent;
+  border: 1px solid #eed7ae;
+  color: #eed7ae;
+  margin: 0 5px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer-social .btn:hover {
+  background-color: #eed7ae;
+  color: #000;
+}
+
+
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+      
+
+
+
+
+
+
+<!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg" style="background: transparent; top: 0px !important;">
+  <div class="container-fluid position-relative">
+
+    <!-- Toggler on the right -->
+    <button class="navbar-toggler text-gold border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" style="color: #eed7ae;">
+      <i class="fas fa-bars fa-lg" style="color: #eed7ae; font-size: 24px;"></i>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+      <div class="navbar-nav d-flex flex-column flex-lg-row align-items-center justify-content-center w-100">
+
+        <!-- Button on the far left for desktop, centered in mobile -->
+        <div class="mb-2 mb-lg-0">
+          <a href="mova-event-2.html" class="btn btn-custom btn2 btn-custom2">
+            بطولة موفا فيفا
+          </a>
+        </div>
+
+        <!-- Logo centered always -->
+        <a href="index.html" class="mx-auto d-block">
+          <img src="img/logo_takwah.png" alt="تكوه" style="height: 80px; max-height: 120px; object-fit: contain;">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Nav Bar End -->
+
+
+
+
+
+ <!-- Floating Social Sidebar -->
+
+<div class="social-sidebar">
+<a href="https://www.tiktok.com/@takwa_cafe?_t=ZS-8xTyq3WVDsO&_r=1" target="_blank" aria-label="TikTok"
+   style="display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: #eed7ae; box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-decoration: none;">
+  <i class="fab fa-tiktok" style="color: #000000;"></i>
+</a>
+
+  <a href="https://wa.me/966560416905" target="_blank" aria-label="WhatsApp"
+     style="display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: #eed7ae; box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-decoration: none;">
+    <i class="fab fa-whatsapp" style="color: #000000;"></i>
+  </a>
+
+    <a href="https://snapchat.com/t/LApYO2sh" target="_blank" aria-label="Snapchat"
+     style="display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: #eed7ae; box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-decoration: none;">
+    <i class="fab fa-snapchat-ghost" style="color: #000000;"></i>
+  </a>
+</div>
+
+                  
+
+
+
+
+
+           <!-- Carousel Start -->
+<div class="carousel" style="overflow: hidden;">
+    <div>
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner1.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner2.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner3.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner4.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+
+
+
+        
+        <!-- Event Start -->
+        <div class="event" id="event">
+            <div class="container">
+                <div class="section-header text-center" dir="rtl">
+                <h5 style="color: #bfbfbd !important;">فعالياتنا</p>
+                <h2 style="color: #bfbfbd !important;">استعد للحظات مميزة مع "تكوه"</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6" style="background: transparent !important;">
+                        <div class="event-item">
+                            <img src="img/event101.jpg" alt="Image">
+                            <div class="event-content">
+                          
+                                <div class="event-text text-right">
+                                    <h3 style="color: #bfbfbd !important;">من يفوز في جولة اليوم؟</h3>
+                                    <p style="color: #eed7ae !important;">
+احجز ركن الألعاب الخاص بك في "تكوه" وابدأ التحدي! بلايستيشن، أجواء حماسية، ومشروبات خفيفة تكمّل متعتك، سواء مع الأصدقاء أو خلال فعالياتنا الأسبوعية.                                    </p >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event111.jpg" alt="Image">
+                            <div class="event-content">
+                        
+                                <div class="event-text text-right">
+                                    <h3 style="color: #bfbfbd !important;">وجبتك المثالية بين النكهات الطازجة</h3>
+                                    <p style="color: #eed7ae !important;">
+وجبة تجمع بين الطعم اللذيذ والتحضير السريع، تقدمها "تكوه" بخيارات متنوعة ترضي جميع الأذواق. سندويشات طازجة، بطاطس مقرمشة، واهتمام بالتفاصيل.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-update10.png" alt="Image">
+                            <div class="event-content">
+                      
+                                <div class="event-text text-right">
+                                    <h3 style="color: #bfbfbd !important;">في "تكوه"، الخدمة تليق بك</h3>
+                                    <p style="color: #eed7ae !important;">
+فريقنا المدرب يهتم بتقديم طلبك بأعلى جودة وأسرع وقت. استمتع بتجربتك في كل زيارة، مع ضيافة راقية واهتمام بتفاصيل الطلب لتكتمل لحظتك.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-update12.jpg" alt="Image">
+                            <div class="event-content">
+                    
+                                <div class="event-text text-right">
+                                    <h3 style="color: #bfbfbd !important;">استراحة هادئة بنكهة الشاي</h3>
+                                    <p style="color: #eed7ae !important;">
+ابدأ يومك أو خذ استراحة في منتصفه مع كوب شاي فاخر وسط أجواء مريحة وإضاءة طبيعية. في "تكوه"، نهتم بتفاصيل الراحة والذوق، لتكون لحظتك أكثر صفاءً ودفئًا.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event-update13.png" alt="Image">
+                            <div class="event-content">
+                    
+                                <div class="event-text text-right">
+                                    <h3 style="color: #bfbfbd !important;">شجع فريقك المفضل وسط أجواء تكوه</h3>
+                                    <p style="color: #eed7ae !important;">
+سواء كنت تشاهد المباراة بمفردك أو برفقة الأصدقاء، جهز نفسك لأجواء مشوقة مع جلسات مريحة، شاشات عالية الدقة، ومشروبات لذيذة تزيد حماسك في كل هدف.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="col-lg-6">
+                        <div class="event-item">
+                            <img src="img/event14.jpg" alt="Image">
+                            <div class="event-content">
+                    
+                                <div class="event-text text-right">
+                                    <h3 style="color: #bfbfbd !important;">عيش أجواء الجلسات الشعبية بلعبتك المفضلة</h3>
+                                    <p style="color: #eed7ae !important;">
+في ركن خاص داخل "تكوه"، تجد جلسة تراثية مميزة وألعاب شعبية مثل Jackaroo وغيرها، لتقضي وقتًا مليئًا بالضحك والتحدي والذكريات الجميلة مع الأصدقاء.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <!-- Event End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer" style="direction: rtl">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h2 class="text-right" style="color: #eed7ae !important;">المقر الرئيسي</h2>
+                            <p>
+                            <i class="fa fa-map-marker-alt" style=" color: #eed7ae !important;"></i>
+                            حي الحمدانية<br> 
+                     جدة، المملكة العربية السعودية   
+                            </p>   
+                            <p><i class="fa fa-phone-alt" style="color: #eed7ae !important;"></i>966560416905+</p>
+                            <p><i class="fa fa-envelope" style="color: #eed7ae !important;"></i>info@basaamat.com</p>
+                        </div>
+                    </div>
+         
+     
+       
+                </div>
+            </div>
+    <div class="container copyright text-center">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <p> <a href="">تكوه</a>، جميع الحقوق محفوظة</p>
+    </div>
+  </div>
+</div>
+
+        </div>
+        <!-- Footer End -->
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      // Scrolling down
+      navbar.classList.add('navbar-hidden');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('navbar-hidden');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+
+
+
+</script>
+<!-- jQuery (Required) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TAKWAH</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<!-- Google Fonts Arabic Modern -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+   .btn:hover,       
+  .btn:hover,
+  .btn-custom:hover {
+    background-color: #eed7ae !important;
+    color: #000 !important;
+    border-color: #eed7ae !important;
+  }
+
+    .btn2:hover,
+  .btn-custom2:hover {
+    background-color: #eed7ae !important;
+    color: #000 !important;
+    border-color: #eed7ae !important;
+  }
+
+  .navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+body {
+  color: #eed7ae !important;
+}
+
+.section-header p,
+.section-header h2,
+.service-text h3,
+.service-text p {
+  color: #eed7ae !important;
+}
+
+.text-gold {
+  color: #eeaeae !important;
+}
+
+ .service-icon {
+
+       margin-left: 10px !important;
+}
+
+  .event-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .service {
+    margin-top: 20px;
+  }
+
+
+
+
+  .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: transparent!important;
+    padding: 15px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar-collapse {
+    background: transparent !important;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .navbar a.nav-link {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    color: #eed7ae;
+  }
+
+    .navbar .navbar-brand {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+.btn-gold {
+  background-color: #eed7ae;
+  color: #000;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-gold:hover {
+  background-color: #e5c77a;
+  color: #1a1a1a !important;
+}
+
+
+.custom-gold-btn {
+  background-color: transparent;
+  color: #eed7ae;
+  border: 2px solid #eed7ae;
+  padding: 8px 18px;
+  font-weight: bold;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.custom-gold-btn:hover {
+  background-color: #eed7ae;
+  color: #1a1a1a; /* or black */
+  text-decoration: none;
+}
+
+
+
+
+
+
+.carousel,
+.owl-carousel {
+  width: 100vw;
+  height: 75vh !important;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0px !important;
+  margin-bottom: 85px !important;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%; /* force it to stay within 75vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain if you don’t want crop */
+  display: block;
+}
+
+.carousel-text {
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  max-width: 90%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hhdiv {
+  padding-top: 30px;
+  margin: 0;
+}
+
+@media (max-width: 1500.98px) {
+        .carousel {
+  height: 50vh !important;
+    }
+
+}
+@media (max-width: 1100.98px) {
+        .carousel {
+  height: 35vh !important;
+    }
+
+}
+@media (max-width: 767.98px) {
+    .carousel {
+  height: 25vh !important;
+    }
+
+}
+@media (max-width: 570.98px) {
+    .carousel {
+  height: 20vh !important;
+  margin-bottom: 0px !important;
+    }
+
+}@media (max-width: 450.98px) {
+    .carousel {
+  height: 13vh !important;
+    }
+
+}
+
+.service-item {
+  background: #2c2926;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  min-height: 450px; /* Adjust based on the tallest box */
+}
+
+.service-text p {
+  text-align: justify;
+  text-align-last: right;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .service {
+    padding-top: 220px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+
+
+
+.event-item {
+  background: #2c2926;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.event-item img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.event-content {
+  padding: 1.2rem;
+}
+
+
+
+
+
+
+
+.volunteer-form input,
+.volunteer-form textarea {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #eed7ae;
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.volunteer-form input:focus,
+.volunteer-form textarea:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 0 2px #eed7ae44;
+}
+
+.volunteer .row {
+  min-height: 600px;
+}
+
+.volunteer-form {
+  background: transparent !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+  .volunteer {
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+}
+
+
+.contact {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+  padding-top: 30px !important;
+}
+
+.contact .contact-img {
+  position: relative;
+  width: 100%;
+}
+
+.contact .contact-img img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+/* Contact form container */
+.contact-form {
+  background: transparent !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  margin-top:-9rem !important; /* shifted more downward */
+}
+
+/* Inputs and textareas */
+.contact-form input,
+.contact-form textarea {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #eed7ae;
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Make placeholder text white */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 0.7;
+}
+
+/* Focus state */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #eed7ae;
+  box-shadow: 0 0 0 2px #eed7ae44;
+}
+
+
+
+
+
+.footer {
+  background: #1a1a1a;
+  padding: 3rem 1rem;
+  color: #eed7ae;
+}
+
+.footer-social .btn {
+  background-color: transparent;
+  border: 1px solid #eed7ae;
+  color: #eed7ae;
+  margin: 0 5px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer-social .btn:hover {
+  background-color: #eed7ae;
+  color: #000;
+}
+
+
+
+ p {
+    text-align: justify;
+    text-align-last: right;
+    direction: rtl;
+  }
+
+</style>
+
+
+
+
+
+
+
+    </head>
+
+    <body >
+<!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg" style="background: transparent; top: 0px !important;">
+  <div class="container-fluid">
+
+<!-- Toggler for mobile -->
+<button class="navbar-toggler text-gold border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+  <i class="fas fa-bars fa-lg" style="color: #eed7ae; font-size: 24px;"></i>
+</button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="d-flex w-100 justify-content-between align-items-center">
+
+        <!-- Left-side Button -->
+        <div>
+          <a href="mova-event-2.html" class="btn btn-custom btn2 btn-custom2">
+            بطولة موفا فيفا
+          </a>
+        </div>
+
+        <!-- Center nav items -->
+        <div class="navbar-nav d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <a href="#contact" class="nav-item nav-link mx-4 text-gold" style="color: #eed7ae !important;">تواصل معنا</a>
+          <a href="event.html" class="nav-item nav-link mx-4 text-gold" style="color: #eed7ae !important;">فعالياتنا</a>
+
+          <a href="index.html" class="mx-4 d-flex align-items-center">
+            <img src="img/logo_takwah.png" alt="تكوه" style="height: 80px; max-height: 120px; object-fit: contain;">
+          </a>
+
+          <a href="#about" class="nav-item nav-link mx-4 text-gold" style="color: #eed7ae !important;">عن تكوه</a>
+          <a href="index.html" class="nav-item nav-link mx-4 text-gold" style="color: #eed7ae !important;">الرئيسية</a>
+        </div>
+
+        <!-- Right-side invisible spacer to balance the left button -->
+        <div style="width: 150px;"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Nav Bar End -->
+
+
+<!-- Floating Social Sidebar -->
+
+<div class="social-sidebar">
+<a href="https://www.tiktok.com/@takwa_cafe?_t=ZS-8xTyq3WVDsO&_r=1" target="_blank" aria-label="TikTok"
+   style="display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: #eed7ae; box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-decoration: none;">
+  <i class="fab fa-tiktok" style="color: #000000;"></i>
+</a>
+
+  <a href="https://wa.me/966560416905" target="_blank" aria-label="WhatsApp"
+     style="display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: #eed7ae; box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-decoration: none;">
+    <i class="fab fa-whatsapp" style="color: #000000;"></i>
+  </a>
+
+    <a href="https://snapchat.com/t/LApYO2sh" target="_blank" aria-label="Snapchat"
+     style="display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background-color: #eed7ae; box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-decoration: none;">
+    <i class="fab fa-snapchat-ghost" style="color: #000000;"></i>
+  </a>
+</div>
+           <!-- Carousel Start -->
+<div class="carousel" style="overflow: hidden;">
+    <div>
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner1.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner2.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner3.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img" style="width: 100%; overflow: hidden;">
+                    <img src="img/banner4.jpg" alt="Image" style="display: block; width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Video Modal End -->
+        
+
+        <!-- About Start -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+
+     <div class="col-lg-6" dir="rtl">
+        <div class="section-header text-right">
+        <p  style="color: #bfbfbd !important;">عن تكوه</p>
+        <h2  style="color: #bfbfbd !important;">لحظتك تبدأ هنا… تكوه أسلوب حياة</h2>
+        </div>
+        <div class="about-tab">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #eed7ae !important;" data-toggle="pill" href="#tab-content-1">من نحن</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #eed7ae !important;" data-toggle="pill" href="#tab-content-2">رسالتنا</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #eed7ae !important;" data-toggle="pill" href="#tab-content-3">رؤيتنا</a>
+            </li>
+        </ul>
+
+        <div class="tab-content text-right">
+
+                    <!-- About Tab -->
+                    <div id="tab-content-1" class="container tab-pane active">
+<p style="color: #eed7ae !important;">
+    تكوه هو براند سعودي حديث ينطلق من قلب المنطقة الغربية، ويقدّم تجربة يومية متكاملة للشباب والعائلات، تجمع بين الجودة، السرعة، والراحة في قالب عصري يعكس ذوق المجتمع وروح المدينة.
+</p >
+<p style="color: #eed7ae !important;">
+    نقدم لك قهوة مختصة تُحضّر بإحساس فاخر، ووجبات خفيفة بنكهات مبتكرة، وجلسات مريحة بأجواء هادئة ولمسات ترفيهية خفيفة، لتجد في "تكوه" لحظتك الخاصة — سواء للعمل، الاسترخاء، أو لقاء من تحب.
+</p style="color: #eed7ae !important;">
+<p style="color: #eed7ae !important;"> 
+    "تكوه" ليست مجرد مكان، بل تجربة يومية خفيفة وملهمة تعيد تعريف أسلوب الحياة السعودي المعاصر.
+</p >
+
+                    </div>
+
+                    <!-- Mission Tab -->
+                    <div id="tab-content-2" class="container tab-pane fade">
+                        <p style="color: #eed7ae !important;">نحن نصنع لحظاتك اليومية بجودة عالية وسرعة مدروسة ومتعة متجددة.</p>
+                        <p style="color: #eed7ae !important;">من قهوتك الصباحية، إلى ساندويشك في منتصف اليوم، إلى ضحكتك مع أصدقائك... تكوه ترافقك في كل لحظة، وتمدك بتجربة متكاملة تتجاوز الخدمة إلى نمط حياة عصري.</p>
+                    </div>
+
+                    <!-- Vision Tab -->
+                    <div id="tab-content-3" class="container tab-pane fade">
+                        <p style="color: #eed7ae !important;">أن تكون "تكوه" الوجهة الأولى لنمط الحياة العصري في المملكة، ومصدر إلهام في تقديم القهوة والطعام والترفيه بأسلوب حديث، سريع، وراقي… يجمع بين الراحة والجودة والابتكار.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-img" data-parallax="scroll" data-image-src="img/us.jpg"></div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="service" dir="rtl" id="service">
+            <div class="container"  dir="rtl">
+            <div class="section-header text-center"  dir="rtl">
+                <h5 style="color: #bfbfbd !important;">ماذا نقدم؟</p>
+                <h2 style="color: #bfbfbd !important;">نصنع لحظاتك اليومية… بنكهة، وراحة، وذوق</h2>
+            </div>
+                <div class="row text-right" dir="rtl">
+                    <div class="col-lg-4 col-md-6 text-right" dir="rtl">
+                        <div class="service-item">
+    
+
+                            <div class="service-icon">
+                                <i class="flaticon-diet"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3 style="color: #bfbfbd !important;">قهوة مختصة وخدمة سريعة</h3>
+                                <p style="color: #eed7ae !important;">في "تكوه"، تبدأ التجربة بقهوة مختصة تُحضّر بعناية وبأحدث تقنيات التحضير. فريق الباريستا يحرص على تقديم نكهات متوازنة بأعلى جودة، مع خدمة سريعة تمنحك ما تحب دون تأخير… سواء في طريقك للعمل أو أثناء جلستك.</p>
+                            </div>
+
+
+                        </div>
+              
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="service-item">
+                                                   <div class="service-icon">
+                                <i class="flaticon-water"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3 style="color: #bfbfbd !important;">وجبات خفيفة ولذيذة</h3>
+                                <p style="color: #eed7ae !important;">نقدّم لك ساندويشات ومأكولات خفيفة تم اختيار مكوناتها بعناية لتناسب جميع الأذواق. تجمع بين البساطة في التقديم والابتكار في النكهة، لترافق قهوتك أو تشكل وجبتك السريعة بجودة مطاعم راقية.</p>
+                            </div>
+
+   
+
+
+
+                        </div>
+
+                       </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+
+                            <div class="service-icon">
+                                <i class="flaticon-healthcare"></i>
+                            </div>
+
+                            <div class="service-text">
+                                <h3 style="color: #bfbfbd !important;">ترفيه عصري وجلسات مريحة</h3>
+                                <p style="color: #eed7ae !important;">في "تكوه"، ستجد جلسات عصرية بتصميم هادئ وأنيق، ومقاعد مريحة تناسب كل لحظة. سواء كنت ترغب في الاسترخاء، العمل، أو لقاء الأصدقاء، الأجواء مصممة لتمنحك راحة نفسية وحس جمالي.
+ولأن اللحظة لا تكتمل دون متعة، نوفر عناصر ترفيهية خفيفة لتجعل تجربتك أكثر حيوية وخصوصية.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-education"></i>
+                            </div>
+
+
+                            <div class="service-text">
+                                <h3 style="color: #bfbfbd !important;">انسيابية الطلب والاستلام</h3>
+                                <p style="color: #eed7ae !important;">من لحظة دخولك، تتيح لك "تكوه" تجربة طلب سلسة سواء عبر التطبيق أو الكاشير، مع خدمة سريعة تجعل استلام طلبك لحظة ممتعة لا تتطلب انتظارًا مزعجًا.</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+
+                            <div class="service-icon">
+                                <i class="flaticon-home"></i>
+                            </div>
+
+                            <div class="service-text">
+                                <h3 style="color: #bfbfbd !important;">تنوع يناسب كل الأذواق</h3>
+                                <p style="color: #eed7ae !important;">سواء كنت تبحث عن قهوة مختصة، أو ساندويش خفيف، أو مشروب مبتكر… ستجد في "تكوه" ما يُرضي ذوقك، بجودة عالية، ونكهات سعودية بطابع عالمي.</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+
+
+                            <div class="service-icon">
+                                <i class="flaticon-social-care"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3 style="color: #bfbfbd !important;">تفاعل إنساني دافئ في كل زيارة</h3>
+                                <p style="color: #eed7ae !important;">في "تكوه"، لا تقتصر تجربتك على الطلب والاستلام، بل تمتد لتشمل تعاملًا بشريًا راقيًا؛ فريق العمل مدرّب على الترحيب، الفهم، والتفاعل بود، ليشعرك بأنك في مكانك المفضل، مهما كانت زيارتك سريعة.</p>
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        
+   
+        <!-- Event Start -->
+        <div class="event" id="event">
+            <div class="container">
+            <div class="section-header text-center" dir="rtl">
+                <h5  style="color: #bfbfbd !important;">فعالياتنا القادمة</p>
+                <h2  style="color: #bfbfbd !important;">استعد للحظات مميزة مع "تكوه"</h2>
+            </div>
+
+                <div class="row">
+                    <div class="col-lg-6 text-right" dir="rtl" >
+                        <div class="event-item text-right" dir="rtl" >
+                            <img src="img/event101.jpg" alt="Image">
+                            <div class="event-content" dir="rtl" >
+                   
+                                <div class="event-text" dir="rtl" >
+                                    <h3 style="color: #bfbfbd !important;">من يفوز في جولة اليوم؟</h3>
+                                    <p style="color: #eed7ae !important;">
+احجز ركن الألعاب الخاص بك في "تكوه" وابدأ التحدي! بلايستيشن، أجواء حماسية، ومشروبات خفيفة تكمّل متعتك، سواء مع الأصدقاء أو خلال فعالياتنا الأسبوعية.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-item text-right" dir="rtl">
+                            <img src="img/event111.jpg" alt="Image">
+                            <div class="event-content">
+                       
+                                <div class="event-text">
+                                    <h3 style="color: #bfbfbd !important;">وجبتك المثالية بين النكهات الطازجة</h3>
+                                    <p style="color: #eed7ae !important;">
+وجبة تجمع بين الطعم اللذيذ والتحضير السريع، تقدمها "تكوه" بخيارات متنوعة ترضي جميع الأذواق. سندويشات طازجة، بطاطس مقرمشة، واهتمام بالتفاصيل.
+
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center">
+            <a class="btn btn-custom btn2 btn-custom2" href="event.html">فعالياتنا</a>
+            </div>
+
+
+        </div>
+        <!-- Event End -->
+        
+        <!-- Volunteer Start -->
+        <div class="volunteer" data-parallax="scroll" data-image-src="img/sign_event.jpg" id="register" style=" background: transparent !important;
+  background-image: url('img/sign_event.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7 text-right">
+                        <div class="volunteer-content">
+                            <div class="section-header">
+                                <p style="color: #ffffff !important;">جاهز وقد التحدي؟</p>
+                                <h2 style="color: #eed7ae !important;">انضم إلينا في الفعالية القادمة... سجل في بطولة موفا فيفا</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+<div class="col-lg-5" >
+  <div class="volunteer-form text-end" dir="rtl" >
+<form id="volunteerForm" novalidate >
+  <div class="control-group mb-3">
+    <input type="text" class="form-control text-end" id="name" placeholder="الاسم الكامل" required dir="rtl" />
+    <p class="help-block text-danger text-end text-right" id="nameError"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="tel" class="form-control text-end" id="phone" placeholder="رقم الجوال" required dir="rtl"
+      pattern="^05\d{8}$" />
+    <p class="help-block text-danger text-end text-right" id="phoneError"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="number" class="form-control text-end " id="age" placeholder="العمر" required dir="rtl"
+      min="1" max="120" />
+    <p class="help-block text-danger text-end text-right" id="ageError"></p>
+  </div>
+  <div class="control-group mb-4">
+    <input type="email" class="form-control text-end" id="email" placeholder="البريد الإلكتروني" required dir="rtl" />
+    <p class="help-block text-danger text-end text-right" id="emailError"></p>
+  </div>
+  <div >
+    <button class="btn btn-custom btn2 btn-custom2 w-100"   type="submit">سجّل الآن</button>
+  </div>
+</form>
+
+  </div>
+</div>
+
+
+
+
+<div class="hhdiv">
+
+
+
+</div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Volunteer End -->
+        
+        <!-- Contact Start -->
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="section-header text-center" style="margin-top: 100px;" dir="rtl">
+                    <h5 style="color: #eed7ae !important;">تواصل معنا</p>
+                    <h2 style="color: #eed7ae !important;">نحن هنا للإجابة على جميع استفساراتك</h2>
+                </div>
+                <div class="contact-img">
+                    <img src="img/contact2.jpg" alt="Image">
+                </div>
+<div class="contact-form">
+    <div id="success"></div>
+   <form name="sentMessage" id="contactForm" novalidate="novalidate" dir="rtl">
+  <div class="control-group mb-3">
+    <input type="text" class="form-control text-end" id="name2" placeholder="الاسم الكامل" required />
+    <p class="help-block text-danger text-end text-right" id="nameError2"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="email" class="form-control text-end" id="email2" placeholder="البريد الإلكتروني" required />
+    <p class="help-block text-danger text-end text-right" id="emailError2"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="text" class="form-control text-end" id="subject" placeholder="الموضوع" required />
+    <p class="help-block text-danger text-end text-right" id="subjectError"></p>
+  </div>
+  <div class="control-group mb-3">
+    <textarea class="form-control text-end" id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <p class="help-block text-danger text-end text-right" id="messageError"></p>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-custom btn2 btn-custom2"  type="submit" id="sendMessageButton">إرسال الرسالة</button>
+  </div>
+</form>
+
+
+
+</div>
+
+
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+<div class="footer" style="direction: rtl">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h2 class="text-right" style="color: #eed7ae !important;">المقر الرئيسي</h2>
+                            <p>
+                            <i class="fa fa-map-marker-alt" style="color: #eed7ae !important;"></i>
+                            حي الحمدانية<br>  
+                     جدة، المملكة العربية السعودية  
+                            </p>                            
+                            <p><i class="fa fa-phone-alt" style="color: #eed7ae !important;"></i>966560416905+</p>
+                            <p><i class="fa fa-envelope" style="color: #eed7ae !important;"></i>info@basaamat.com</p>
+                        </div>
+                    </div>
+         
+     
+       
+                </div>
+            </div>
+    <div class="container copyright text-center">
+  <div class="row justify-content-center">
+    <div class="col-md-12" style="color: #eed7ae !important;">
+      <p> <a href="">تكوه</a>، جميع الحقوق محفوظة</p>
+    </div>
+  </div>
+</div>
+
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+<script dir="rtl" class="text-right">
+  document.getElementById('volunteerForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    const name = document.getElementById('name');
+    const phone = document.getElementById('phone');
+    const age = document.getElementById('age');
+    const email = document.getElementById('email');
+
+    document.getElementById('nameError').textContent = '';
+    document.getElementById('phoneError').textContent = '';
+    document.getElementById('ageError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+
+    if (name.value.trim() === '') {
+      document.getElementById('nameError').textContent = 'الاسم مطلوب';
+      valid = false;
+    }
+
+    const phonePattern = /^05\d{8}$/;
+    if (!phonePattern.test(phone.value)) {
+      document.getElementById('phoneError').textContent = 'يرجى إدخال رقم جوال صحيح يبدأ بـ 05 ويتكون من 10 أرقام';
+      valid = false;
+    }
+
+    if (age.value === '' || age.value < 1 || age.value > 120) {
+      document.getElementById('ageError').textContent = 'يرجى إدخال عمر صحيح';
+      valid = false;
+    }
+
+    if (!email.checkValidity()) {
+      document.getElementById('emailError').textContent = 'يرجى إدخال بريد إلكتروني صحيح';
+      valid = false;
+    }
+
+    if (valid) {
+      try {
+        const response = await fetch('/api/volunteer', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name.value,
+            phone: phone.value,
+            age: age.value,
+            email: email.value
+          })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert('تم إرسال النموذج بنجاح!');
+          // يمكنك هنا إعادة تعيين النموذج إذا أردت:
+          // document.getElementById('volunteerForm').reset();
+        } else {
+          alert(result.message || 'حدث خطأ أثناء الإرسال');
+        }
+      } catch (error) {
+        console.error('خطأ في الإرسال:', error);
+        alert('فشل الاتصال بالخادم');
+      }
+    }
+  });
+</script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    const name = document.getElementById('name2');
+    const email = document.getElementById('email2');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
+
+    document.getElementById('nameError2').textContent = '';
+    document.getElementById('emailError2').textContent = '';
+    document.getElementById('subjectError').textContent = '';
+    document.getElementById('messageError').textContent = '';
+
+    if (name.value.trim() === '') {
+      document.getElementById('nameError2').textContent = 'الاسم مطلوب';
+      valid = false;
+    }
+
+    if (!email.checkValidity()) {
+      document.getElementById('emailError2').textContent = 'يرجى إدخال بريد إلكتروني صحيح';
+      valid = false;
+    }
+
+    if (subject.value.trim() === '') {
+      document.getElementById('subjectError').textContent = 'يرجى إدخال الموضوع';
+      valid = false;
+    }
+
+    if (message.value.trim() === '') {
+      document.getElementById('messageError').textContent = 'يرجى كتابة الرسالة';
+      valid = false;
+    }
+
+    if (valid) {
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value
+          })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert('تم إرسال الرسالة بنجاح!');
+          // document.getElementById('contactForm').reset();
+        } else {
+          alert(result.message || 'حدث خطأ أثناء إرسال الرسالة');
+        }
+      } catch (error) {
+        console.error('فشل الاتصال بالخادم:', error);
+        alert('فشل الاتصال بالخادم');
+      }
+    }
+  });
+</script>
+
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      // Scrolling down
+      navbar.classList.add('navbar-hidden');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('navbar-hidden');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+
+
+
+<!-- jQuery (Required) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
