@@ -205,7 +205,7 @@
 
 }@media (max-width: 450.98px) {
     .carousel {
-  height: 20vh !important;
+  height: 17vh !important;
     }
 
 }
@@ -292,6 +292,10 @@
 }
 
 
+.navbar-nav img {
+  display: block;
+  margin: 0 auto;
+}
 
 
 
@@ -310,6 +314,8 @@
     </a>
   </div>
 </div>
+
+
         <!-- Nav Bar End -->
 
  <!-- Floating Social Sidebar -->
@@ -366,7 +372,8 @@
 
 
         
-        <!-- Event Start -->        <div class="event" id="event">
+        <!-- Event Start -->
+        <div class="event" id="event">
             <div class="container">
                 <div class="section-header text-center" dir="rtl">
                 <h5 style="color: #bfbfbd !important;">بطوله موفا فيفا</p>
@@ -449,29 +456,36 @@
 
             <div class="col-lg-5" >
               <div class="volunteer-form text-end" dir="rtl" >
-            <form id="volunteerForm" novalidate >
-              <div class="control-group mb-3">
-                <input type="text" class="form-control text-end" id="name" placeholder="الاسم الكامل" required dir="rtl" />
-                <p class="help-block text-danger text-end text-right" id="nameError"></p>
-              </div>
-              <div class="control-group mb-3">
-                <input type="tel" class="form-control text-end" id="phone" placeholder="رقم الجوال" required dir="rtl"
-                  pattern="^05\d{8}$" />
-                <p class="help-block text-danger text-end text-right" id="phoneError"></p>
-              </div>
-              <div class="control-group mb-3">
-                <input type="number" class="form-control text-end " id="age" placeholder="العمر" required dir="rtl"
-                  min="1" max="120" />
-                <p class="help-block text-danger text-end text-right" id="ageError"></p>
-              </div>
-              <div class="control-group mb-4">
-                <input type="email" class="form-control text-end" id="email" placeholder="البريد الإلكتروني" required dir="rtl" />
-                <p class="help-block text-danger text-end text-right" id="emailError"></p>
-              </div>
-              <div >
-                <button class="btn btn-custom btn2 btn-custom2 w-100" style="color: #eed7ae !important;"  type="submit">سجّل الآن</button>
-              </div>
-            </form>
+<form id="volunteerForm" novalidate>
+  <div class="control-group mb-3">
+    <input type="text" class="form-control text-end" id="name" placeholder="الاسم الكامل" required dir="rtl" />
+    <p class="help-block text-danger text-end text-right" id="nameError"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="tel" class="form-control text-end" id="phone" placeholder="رقم الجوال" required dir="rtl"
+      pattern="^05\\d{8}$" />
+    <p class="help-block text-danger text-end text-right" id="phoneError"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="email" class="form-control text-end" id="email" placeholder="البريد الإلكتروني" required dir="rtl" />
+    <p class="help-block text-danger text-end text-right" id="emailError"></p>
+  </div>
+  <div class="control-group mb-3">
+    <input type="text" class="form-control text-end" id="city" placeholder="المدينة" required dir="rtl" />
+    <p class="help-block text-danger text-end text-right" id="cityError"></p>
+  </div>
+  <div class="control-group mb-4">
+    <input type="number" class="form-control text-end" id="age" placeholder="العمر" required dir="rtl"
+      min="1" max="120" />
+    <p class="help-block text-danger text-end text-right" id="ageError"></p>
+  </div>
+  <div>
+    <button class="btn btn-custom btn2 btn-custom2 w-100" style="color: #eed7ae !important;" type="submit">
+      سجّل الآن
+    </button>
+  </div>
+</form>
+
 
               </div>
             </div>
@@ -614,71 +628,79 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 <script dir="rtl" class="text-right">
-  document.getElementById('volunteerForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    let valid = true;
+document.getElementById('volunteerForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  let valid = true;
 
-    const name = document.getElementById('name');
-    const phone = document.getElementById('phone');
-    const age = document.getElementById('age');
-    const email = document.getElementById('email');
+  const name = document.getElementById('name');
+  const phone = document.getElementById('phone');
+  const email = document.getElementById('email');
+  const city = document.getElementById('city');
+  const age = document.getElementById('age');
 
-    document.getElementById('nameError').textContent = '';
-    document.getElementById('phoneError').textContent = '';
-    document.getElementById('ageError').textContent = '';
-    document.getElementById('emailError').textContent = '';
+  document.getElementById('nameError').textContent = '';
+  document.getElementById('phoneError').textContent = '';
+  document.getElementById('emailError').textContent = '';
+  document.getElementById('cityError').textContent = '';
+  document.getElementById('ageError').textContent = '';
 
-    if (name.value.trim() === '') {
-      document.getElementById('nameError').textContent = 'الاسم مطلوب';
-      valid = false;
-    }
+  if (name.value.trim() === '') {
+    document.getElementById('nameError').textContent = 'الاسم مطلوب';
+    valid = false;
+  }
 
-    const phonePattern = /^05\d{8}$/;
-    if (!phonePattern.test(phone.value)) {
-      document.getElementById('phoneError').textContent = 'يرجى إدخال رقم جوال صحيح يبدأ بـ 05 ويتكون من 10 أرقام';
-      valid = false;
-    }
+  const phonePattern = /^05\d{8}$/;
+  if (!phonePattern.test(phone.value)) {
+    document.getElementById('phoneError').textContent = 'يرجى إدخال رقم جوال صحيح يبدأ بـ 05 ويتكون من 10 أرقام';
+    valid = false;
+  }
 
-    if (age.value === '' || age.value < 1 || age.value > 120) {
-      document.getElementById('ageError').textContent = 'يرجى إدخال عمر صحيح';
-      valid = false;
-    }
+  if (!email.checkValidity()) {
+    document.getElementById('emailError').textContent = 'يرجى إدخال بريد إلكتروني صحيح';
+    valid = false;
+  }
 
-    if (!email.checkValidity()) {
-      document.getElementById('emailError').textContent = 'يرجى إدخال بريد إلكتروني صحيح';
-      valid = false;
-    }
+  if (city.value.trim() === '') {
+    document.getElementById('cityError').textContent = 'المدينة مطلوبة';
+    valid = false;
+  }
 
-    if (valid) {
-      try {
-        const response = await fetch('/api/volunteer', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            name: name.value,
-            phone: phone.value,
-            age: age.value,
-            email: email.value
-          })
-        });
+  if (age.value === '' || age.value < 1 || age.value > 120) {
+    document.getElementById('ageError').textContent = 'يرجى إدخال عمر صحيح';
+    valid = false;
+  }
 
-        const result = await response.json();
+  if (valid) {
+    try {
+      const response = await fetch('/api/volunteer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name.value,
+          phone: phone.value,
+          email: email.value,
+          city: city.value,
+          age: age.value
+        })
+      });
 
-        if (response.ok) {
-          alert('تم إرسال النموذج بنجاح!');
-          // يمكنك هنا إعادة تعيين النموذج إذا أردت:
-          // document.getElementById('volunteerForm').reset();
-        } else {
-          alert(result.message || 'حدث خطأ أثناء الإرسال');
-        }
-      } catch (error) {
-        console.error('خطأ في الإرسال:', error);
-        alert('فشل الاتصال بالخادم');
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('تم إرسال النموذج بنجاح!');
+        // document.getElementById('volunteerForm').reset();
+      } else {
+        alert(result.message || 'حدث خطأ أثناء الإرسال');
       }
+    } catch (error) {
+      console.error('خطأ في الإرسال:', error);
+      alert('فشل الاتصال بالخادم');
     }
-  });
+  }
+});
+
 </script>
 
 
