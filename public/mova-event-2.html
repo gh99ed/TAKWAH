@@ -300,6 +300,31 @@
 
 
         </style>
+<style>
+  .modal-content {
+    background: #1a1a1a;
+    color: #eed7ae;
+  }
+  .modal-header .close {
+    color: #eed7ae;
+  }
+</style>
+
+
+<style>
+
+
+  /* For smaller screens, keep text nicely wrapped */
+  @media (max-width: 576px) {
+    .form-check-label {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+
+</style>
+
 
     </head>
 
@@ -386,16 +411,33 @@
                         <div class="event-content">
                             <div class="event-text text-right">
                                 <h3 style="color: #bfbfbd !important;">الطريق إلى النهائي</h3>
-                                <p style="color: #eed7ae !important; line-height: 1.8;">
-                                    تنقسم بطولة موفا فيفا إلى 8 مجموعات (من A إلى H)، تضم كل مجموعة 4 لاعبين يتنافسون بنظام النقاط في مرحلة المجموعات. يتأهل من كل مجموعة أفضل لاعبين إلى دور الـ16، لينطلق بعد ذلك مشوار الإقصائيات الحاسمة نحو النهائي.<br><br>
-                                    تسير المنافسات وفق النظام التالي:<br>
-                                    <strong>*مرحلة المجموعات:</strong> يتنافس اللاعبون داخل كل مجموعة بنظام الدوري.<br>
-                                    <strong>*دور الـ16:</strong> تبدأ الأدوار الإقصائية بتصفية مباشرة.<br>
-                                    <strong>*دور الـ8:</strong> مباريات حماسية يتأهل منها 4 لاعبين.<br>
-                                    <strong>*دور نصف النهائي:</strong> يقترب الأبطال من الحلم.<br>
-                                    <strong>*النهائي الكبير:</strong> مواجهة حاسمة لتتويج بطل "موفا فيفا".<br>
-                                    <strong>*مباراة تحديد المركز الثالث:</strong> لتكريم المركز الثالث بجائزة قيّمة.
-                                </p>
+<p style="
+  color: #eed7ae !important;
+  line-height: 1.8 !important;
+  white-space: pre-wrap !important;
+  font-size: 1rem !important;
+">
+عشان توصل لمنصة التتويج وترفع كأس موفا فيفا، لازم تعدي طريق مليان تحديات ومواجهات نارية! خل نشوف كيف بيكون مشوارك خطوة بخطوة:
+
+✅ مرحلة المجموعات (64 لاعب):
+تنقسم البطولة إلى 16 مجموعة (من A إلى P).
+كل مجموعة تضم 4 لاعبين يتنافسون وجهاً لوجه.
+يتأهل الأول والثاني من كل مجموعة لدور الـ32، ليصير عندنا 32 لاعب مكملين المشوار.
+✅ دور الـ32:
+مواجهات ذهاب وإياب.
+اللي يفوز بمجموع المباراتين يتأهل لدور الـ16.
+✅ دور الـ16:
+مواجهات قوية ذهاب وإياب، وما يبقى إلا الأقوى.
+✅ دور الـ8 (ربع النهائي):
+حماس يوصل للسماء… مباريات ذهاب وإياب لحجز مكان في المربع الذهبي.
+✅ دور الـ4 (نصف النهائي):
+أربع لاعبين بس يبقون… مين منهم بيتأهل للحلم الكبير؟
+✅ النهائي وتحديد المركز الثالث:
+النهائي يلعب ذهاب وإياب لتحديد بطل موفا فيفا.
+واللي ما حالفه الحظ، عنده فرصة يثبت نفسه في مباراة تحديد المركز الثالث.
+هل عندك اللي يخليك تكمل الطريق للنهاية؟ المجد ينتظر الأبطال… واللقب ما يجي إلا لأقوى واحد! 🏆🔥
+</p>
+
                             </div>
                         </div>
                     </div>
@@ -479,11 +521,66 @@
       min="1" max="120" />
     <p class="help-block text-danger text-end text-right" id="ageError"></p>
   </div>
-  <div>
-    <button class="btn btn-custom btn2 btn-custom2 w-100" style="color: #eed7ae !important;" type="submit">
-      سجّل الآن
-    </button>
+<div class="form-group mb-3 text-end" dir="rtl">
+  <div style="
+      display: inline-flex !important;
+      flex-direction: row-reverse !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      gap: 8px !important;
+      flex-wrap: nowrap !important;
+      vertical-align: middle !important;
+    ">
+      
+    <input 
+      type="checkbox" 
+      class="form-check-input" 
+      id="terms" 
+      style="
+        width: 18px !important;
+        height: 18px !important;
+        accent-color: #eed7ae !important;
+        cursor: pointer !important;
+        margin: 0 !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+        position: relative !important;
+        top: -1px !important;
+      " 
+    />
+
+    <label for="terms" style="
+        margin: 0 !important;
+        cursor: pointer !important;
+        color: #eed7ae !important;
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        line-height: 1.2 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        vertical-align: middle !important;
+        white-space: nowrap !important;
+    ">
+      أوافق على
+      <a href="#" id="openTerms" style="
+        color: #eed7ae !important;
+        text-decoration: underline !important;
+        font-weight: 600 !important;
+        margin-right: 4px !important;
+      ">الشروط والأحكام</a>
+    </label>
+    
   </div>
+  <p class="help-block text-danger text-end" id="termsError" style="margin-top: 5px !important;"></p>
+</div>
+
+
+<div>
+  <button class="btn btn-custom btn2 btn-custom2 w-100" style="color: #eed7ae !important;" type="submit">
+    سجّل الآن
+  </button>
+</div>
+
 </form>
 
 
@@ -669,6 +766,13 @@ document.getElementById('volunteerForm').addEventListener('submit', async functi
     document.getElementById('ageError').textContent = 'يرجى إدخال عمر صحيح';
     valid = false;
   }
+const terms = document.getElementById('terms');
+document.getElementById('termsError').textContent = '';
+
+if (!terms.checked) {
+  document.getElementById('termsError').textContent = 'يجب الموافقة على الشروط والأحكام قبل التسجيل';
+  valid = false;
+}
 
   if (valid) {
     try {
@@ -702,9 +806,115 @@ document.getElementById('volunteerForm').addEventListener('submit', async functi
 });
 
 </script>
+<script>
+  document.getElementById('openTerms').addEventListener('click', function(e) {
+    e.preventDefault();
+    $('#termsModal').modal('show');
+  });
+</script>
 
-
-
+<!-- Terms of Use Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true" dir="rtl">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content" style="background: #1a1a1a; color: #eed7ae; border-radius: 10px; border: 1px solid #eed7ae;">
+      <div class="modal-header" style="border-bottom: 1px solid #eed7ae;">
+        <h5 class="modal-title" id="termsModalLabel" style="font-weight: 700; color: #eed7ae;">سياسات وأحكام بطولة موفا فيفا</h5>
+    
+        </button>
+      </div>
+      <div class="modal-body" style="
+        text-align: justify;
+        direction: rtl;
+        max-height: 70vh;
+        overflow-y: auto;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+        line-height: 1.8;
+      ">
+        <h6 style="font-weight: bold; color: #eed7ae;">سياسات وأحكام بطولة موفا فيفا</h6>
+        <ol style="padding-right: 1.5rem;">
+          <li><strong>الموعد والمكان:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>تُقام البطولة يوم الاثنين الموافق 21 يوليو 2025 في مقهى تكوه – حي الحمدانية – جدة.</li>
+            </ul>
+          </li>
+          <li><strong>نظام البطولة:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>تُلعب مرحلة المجموعات بنظام النقاط، حيث يمنح الفوز (3) نقاط، وتُمنح الخسارة (1) نقطة.</li>
+              <li>لا يُسمح بالتعادل في أي مباراة. في حال انتهاء الوقت الأصلي بالتعادل، تُحسم المباراة بركلات الترجيح.</li>
+              <li>في حال تساوي اللاعبين في النقاط داخل المجموعة، يتم اللجوء إلى فارق الأهداف لتحديد المتأهلين.</li>
+              <li>الأدوار الإقصائية (من دور الـ32 حتى النهائي) تُلعب بنظام الذهاب والإياب، ويُحتسب مجموع نتيجة المباراتين لتحديد المتأهل.</li>
+            </ul>
+          </li>
+          <li><strong>مدة المباراة:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>تكون مدة المباراة (6) دقائق لكل شوط، ويجوز تعديلها من اللجنة المنظمة حسب ظروف البطولة.</li>
+            </ul>
+          </li>
+          <li><strong>اختيار الفرق:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>يحق للاعب اختيار أي فريق, ويستمر فيه الى نهاية البطولة ولا يحق له التغيير، ما لم يُحدد غير ذلك من اللجنة المنظمة.</li>
+            </ul>
+          </li>
+          <li><strong>التأخر عن الحضور:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>يُعتبر اللاعب منسحباً إذا تأخر أكثر من (10) دقائق عن موعد مباراته، وتُحتسب النتيجة لصالح المنافس 3:0.</li>
+            </ul>
+          </li>
+          <li><strong>السلوك والروح الرياضية:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>يُمنع التلفظ بألفاظ مسيئة أو القيام بتصرفات غير رياضية. ويحتفظ المنظمون بحق استبعاد أي لاعب يرتكب مخالفات سلوكية.</li>
+            </ul>
+          </li>
+          <li><strong>الأعطال التقنية:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>في حال حدوث عطل تقني في الأجهزة أو اللعبة، تتم إعادة المباراة بالكامل إذا لم تتجاوز الدقيقة (60) من زمن المباراة.</li>
+            </ul>
+          </li>
+          <li><strong>الظهور الإعلامي:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>يُعد تسجيل اللاعب في البطولة موافقة ضمنية على الظهور الإعلامي في الصور والفيديوهات والتغطيات التي تُنشر عبر منصات التواصل الاجتماعي الخاصة بالبطولة والمنظمين.</li>
+            </ul>
+          </li>
+          <li><strong>إحضار وحدة التحكم الخاصة:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>حرصاً على راحة اللاعبين ولتجنب الإحراج، يُنصح بإحضار وحدة التحكم (يد التحكم) الخاصة بكل لاعب.</li>
+            </ul>
+          </li>
+          <li><strong>البث واللعب بكاميرات تشاركي:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>جميع المباريات في البطولة ستكون الإعدادات بكاميرات تشاركي.</li>
+            </ul>
+          </li>
+          <li><strong>الجوائز:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>تُعلن الجوائز المالية والعينية وترتيبها النهائي قبل انطلاق البطولة.</li>
+            </ul>
+          </li>
+          <li><strong>صلاحية اللجنة المنظمة:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>تحتفظ اللجنة المنظمة بحق تعديل أي بند من بنود الأحكام والسياسات إذا استدعت ظروف البطولة ذلك، بما يحقق العدالة وسير المنافسة بشكل منظم.</li>
+            </ul>
+          </li>
+          <li><strong>قرارات اللجنة:</strong>
+            <ul style="list-style-type: disc; padding-right: 1.5rem;">
+              <li>جميع قرارات اللجنة المنظمة نهائية وغير قابلة للطعن أو المراجعة.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer" style="border-top: 1px solid #eed7ae;">
+        <button type="button" class="btn btn-custom" data-dismiss="modal" style="
+            color: #eed7ae !important;
+            border: 1px solid #eed7ae !important;
+            background: transparent !important;
+            border-radius: 5px !important;
+            padding: 0.5rem 1.5rem !important;
+          ">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     </body>
 </html>
